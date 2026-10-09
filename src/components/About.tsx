@@ -1,4 +1,4 @@
-import { Clock, Trophy, Users, Rocket, Sparkles, Cpu } from 'lucide-react';
+import { Clock, Trophy, Users, Rocket, Cpu } from 'lucide-react';
 
 export function About() {
   const stats = [

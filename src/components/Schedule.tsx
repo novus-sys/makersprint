@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calendar, Clock, MapPin, Sparkles } from 'lucide-react';
+import { Clock } from 'lucide-react';
 
 interface TimelineEvent {
   time: string;

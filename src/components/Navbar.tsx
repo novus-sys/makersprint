@@ -3,10 +3,9 @@ import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   onRegisterClick?: () => void;
-  onSignInClick?: () => void;
 }
 
-export function Navbar({ onRegisterClick, onSignInClick }: NavbarProps) {
+export function Navbar({ onRegisterClick }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState('Home');
 

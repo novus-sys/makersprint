@@ -1,4 +1,4 @@
-import { Trophy, Award, Gift, Sparkles, ShieldCheck, Zap } from 'lucide-react';
+import { Trophy, Award, Sparkles, ShieldCheck } from 'lucide-react';
 
 export function Prizes() {
   const podiumPrizes = [
