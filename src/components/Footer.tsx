@@ -27,7 +27,9 @@ export function Footer() {
 
           <div className="flex items-center gap-4 shrink-0">
             <a
-              href="#register"
+              href="https://tally.so/r/WOG9jv"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-7 py-3 rounded-full bg-white text-black font-semibold text-sm hover:bg-neutral-200 transition-all shadow-md active:scale-95 cursor-pointer"
             >
               Register Now
@@ -195,7 +197,12 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#register" className="text-blue-400 hover:text-blue-300 font-medium transition-colors">
+                <a
+                  href="https://tally.so/r/WOG9jv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
+                >
                   Apply Now →
                 </a>
               </li>

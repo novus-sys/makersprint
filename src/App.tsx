@@ -9,10 +9,6 @@ import { Footer } from './components/Footer';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 function App() {
-  const scrollToRegister = () => {
-    document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -21,11 +17,11 @@ function App() {
     <div className="min-h-screen bg-black text-white font-sans selection:bg-blue-600 selection:text-white flex flex-col overflow-x-hidden relative">
       {/* Continuous Vertical Boundary Guide Lines Running Across The Website */}
       <div className="pointer-events-none fixed inset-0 z-20 flex justify-center">
-        <div className="w-full max-w-7xl h-full border-x border-white/10" />
+        <div className="w-full max-w-[1440px] h-full border-x border-white/10" />
       </div>
 
       {/* Top Navbar */}
-      <Navbar onRegisterClick={scrollToRegister} />
+      <Navbar />
 
       {/* Hero Section */}
       <section id="home" className="relative flex flex-col justify-between pt-16">
@@ -51,13 +47,14 @@ function App() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 mt-8 sm:mt-10">
-            <button
-              type="button"
-              onClick={scrollToRegister}
-              className="px-8 py-3 rounded-full text-sm sm:text-base font-semibold bg-white text-black hover:bg-neutral-200 transition-all duration-200 shadow-md shadow-white/10 active:scale-95 cursor-pointer"
+            <a
+              href="https://tally.so/r/WOG9jv"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 rounded-full text-sm sm:text-base font-semibold bg-white text-black hover:bg-neutral-200 transition-all duration-200 shadow-md shadow-white/10 active:scale-95 cursor-pointer inline-flex items-center justify-center"
             >
               Register
-            </button>
+            </a>
             <button
               type="button"
               onClick={scrollToAbout}
@@ -103,7 +100,7 @@ function App() {
 
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://sjcestep.in"
+              href="https://tally.so/r/WOG9jv"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white text-black font-semibold text-sm sm:text-base hover:bg-neutral-200 transition-all active:scale-95 shadow-lg shadow-white/10 cursor-pointer"

@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
-interface NavbarProps {
-  onRegisterClick?: () => void;
-}
-
-export function Navbar({ onRegisterClick }: NavbarProps) {
+export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState('Home');
 
@@ -50,13 +46,14 @@ export function Navbar({ onRegisterClick }: NavbarProps) {
 
         {/* Right: Register Now Button */}
         <div className="hidden sm:flex items-center shrink-0">
-          <button
-            type="button"
-            onClick={onRegisterClick}
-            className="px-6 py-2 rounded-full bg-white text-black hover:bg-neutral-200 text-sm font-semibold transition-all duration-200 shadow-sm cursor-pointer active:scale-95"
+          <a
+            href="https://tally.so/r/WOG9jv"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2 rounded-full bg-white text-black hover:bg-neutral-200 text-sm font-semibold transition-all duration-200 shadow-sm cursor-pointer active:scale-95 inline-flex items-center justify-center"
           >
             Register Now
-          </button>
+          </a>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -89,13 +86,14 @@ export function Navbar({ onRegisterClick }: NavbarProps) {
             </a>
           ))}
           <div className="pt-3 border-t border-white/10 flex flex-col">
-            <button
-              type="button"
-              onClick={onRegisterClick}
-              className="w-full py-2.5 rounded-full bg-white text-black text-sm font-semibold"
+            <a
+              href="https://tally.so/r/WOG9jv"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-2.5 rounded-full bg-white text-black text-sm font-semibold text-center inline-flex items-center justify-center"
             >
               Register Now
-            </button>
+            </a>
           </div>
         </div>
       )}

@@ -129,7 +129,9 @@ export function Prizes() {
 
             <div className="pt-4">
               <a
-                href="#register"
+                href="https://tally.so/r/WOG9jv"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`w-full py-2.5 rounded-full text-xs sm:text-sm font-semibold flex items-center justify-center transition-all cursor-pointer ${
                   prize.isGrand
                     ? 'bg-white text-black hover:bg-neutral-200'
