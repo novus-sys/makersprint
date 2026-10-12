@@ -186,7 +186,7 @@ export function Prizes() {
             Direct Path to Venture Incubation at SJCE-STEP
           </h3>
           <p className="text-neutral-300 text-sm sm:text-base leading-relaxed mb-6">
-            MakerSprint isn’t just a weekend sprint that ends on Sunday. Standout projects will be invited into the 
+            MakerSprint isn’t just a 12-hour sprint that ends when the timer stops. Standout projects will be invited into the 
             <strong> SJCE-STEP Pre-Incubation Cohort</strong>, receiving seed-stage guidance, access to prototyping labs, 
             expert legal/patent consultation, and direct linkage to central & state government grant schemes.
           </p>

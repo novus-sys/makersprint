@@ -9,9 +9,9 @@ interface TimelineEvent {
 }
 
 export function Schedule() {
-  const [activeDay, setActiveDay] = useState<'day1' | 'day2'>('day1');
+  const [activePhase, setActivePhase] = useState<'phase1' | 'phase2'>('phase1');
 
-  const day1Events: TimelineEvent[] = [
+  const phase1Events: TimelineEvent[] = [
     {
       time: '08:30 AM',
       title: 'Reporting & Check-in',
@@ -19,77 +19,59 @@ export function Schedule() {
       tag: 'Logistics',
     },
     {
-      time: '10:00 AM',
+      time: '09:30 AM',
       title: 'Opening Ceremony & Keynote',
       description: 'Address by SJCE-STEP leadership, event overview, rules, and track insights.',
       tag: 'Keynote',
     },
     {
-      time: '11:30 AM',
-      title: 'Hacking Commences',
+      time: '10:00 AM',
+      title: '12-Hour Sprint Commences',
       description: 'The sprint officially begins! Connect to high-speed internet and push your initial commits.',
       tag: 'Sprint Kickoff',
     },
     {
-      time: '01:30 PM',
+      time: '01:00 PM',
       title: 'Lunch & Networking',
       description: 'Recharge and connect with fellow hackers and student founders.',
       tag: 'Food',
     },
     {
-      time: '04:30 PM',
+      time: '03:00 PM',
       title: 'Mentorship Checkpoint 1',
       description: 'Industry experts and tech founders review your architecture, hardware choices, and approach.',
       tag: 'Mentorship',
     },
-    {
-      time: '08:00 PM',
-      title: 'Dinner & Lightning Activities',
-      description: 'Hot dinner served followed by quick icebreaker games and sponsor giveaways.',
-      tag: 'Food & Fun',
-    },
-    {
-      time: '11:59 PM',
-      title: 'Midnight Energy Boost',
-      description: 'Midnight snacks, coffee, and all-night collaborative hacking session.',
-      tag: 'Fuel',
-    },
   ];
 
-  const day2Events: TimelineEvent[] = [
+  const phase2Events: TimelineEvent[] = [
     {
-      time: '08:00 AM',
-      title: 'Breakfast & Morning Standup',
-      description: 'Power breakfast and final review of sprint deliverables with your team.',
-      tag: 'Fuel',
-    },
-    {
-      time: '10:30 AM',
+      time: '05:30 PM',
       title: 'Mentorship Checkpoint 2: Demo Prep',
       description: 'Dry run of your pitch deck and live product demo with senior mentors.',
       tag: 'Pitching',
     },
     {
-      time: '01:00 PM',
-      title: 'Lunch & Code Freeze',
+      time: '07:30 PM',
+      title: 'Evening Snacks & Code Freeze',
       description: 'Final repository push, README documentation, and portal submission.',
       tag: 'Deadline',
     },
     {
-      time: '02:30 PM',
+      time: '08:00 PM',
       title: 'Grand Jury Demos & Pitching',
       description: 'Live interactive demonstrations before an esteemed jury of founders, VCs, and tech leads.',
       tag: 'Evaluation',
     },
     {
-      time: '05:30 PM',
+      time: '09:30 PM',
       title: 'Valedictory & Prize Distribution',
       description: 'Announcement of winners, track bounties, SJCE-STEP incubation offers, and closing remarks.',
       tag: 'Ceremony',
     },
   ];
 
-  const events = activeDay === 'day1' ? day1Events : day2Events;
+  const events = activePhase === 'phase1' ? phase1Events : phase2Events;
 
   return (
     <section id="schedule" className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
@@ -102,37 +84,37 @@ export function Schedule() {
           Event Schedule
         </h2>
         <p className="text-xl sm:text-2xl md:text-3xl font-semibold leading-snug">
-          <strong className="text-white font-bold">36 hours of relentless momentum. </strong>
+          <strong className="text-white font-bold">12 hours of relentless momentum. </strong>
           <span className="text-neutral-400">
-            From architecture checkpoints and midnight sprints to live jury demos and grand valedictory.
+            From kickoff and mentorship checkpoints to live jury demos and grand valedictory.
           </span>
         </p>
       </div>
 
-      {/* Day Toggle Switcher */}
+      {/* Phase Toggle Switcher */}
       <div className="flex justify-center mb-14">
         <div className="inline-flex p-1.5 rounded-full border border-white/20 bg-white/[0.06] backdrop-blur-xl">
           <button
             type="button"
-            onClick={() => setActiveDay('day1')}
+            onClick={() => setActivePhase('phase1')}
             className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
-              activeDay === 'day1'
+              activePhase === 'phase1'
                 ? 'bg-white text-black shadow-md'
                 : 'text-neutral-300 hover:text-white hover:bg-white/5'
             }`}
           >
-            Day 1: Kickoff & Sprint
+            Phase 1: Kickoff & Sprint
           </button>
           <button
             type="button"
-            onClick={() => setActiveDay('day2')}
+            onClick={() => setActivePhase('phase2')}
             className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
-              activeDay === 'day2'
+              activePhase === 'phase2'
                 ? 'bg-white text-black shadow-md'
                 : 'text-neutral-300 hover:text-white hover:bg-white/5'
             }`}
           >
-            Day 2: Ship & Pitch
+            Phase 2: Ship & Pitch
           </button>
         </div>
       </div>

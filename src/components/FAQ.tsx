@@ -38,7 +38,7 @@ export function FAQ() {
     {
       question: 'Can we work on a pre-existing project?',
       answer:
-        'All projects must be started and built from scratch during the 36-hour sprint. You are free to use open-source libraries, public packages, APIs, and boilerplate setups, but all core features must be implemented during the hackathon.',
+        'All projects must be started and built from scratch during the 12-hour sprint. You are free to use open-source libraries, public packages, APIs, and boilerplate setups, but all core features must be implemented during the hackathon.',
     },
     {
       question: 'Where is the hackathon venue located?',

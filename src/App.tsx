@@ -95,7 +95,7 @@ function App() {
             Ready to Sprint, Build, and Ship?
           </h2>
           <p className="text-neutral-400 text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-            Join hundreds of visionary student innovators and makers at SJCE-STEP Campus for 36 hours of relentless creation.
+            Join hundreds of visionary student innovators and makers at SJCE-STEP Campus for 12 hours of relentless creation.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">

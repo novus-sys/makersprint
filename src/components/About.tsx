@@ -4,7 +4,7 @@ export function About() {
   const stats = [
     {
       icon: Clock,
-      value: '36 Hours',
+      value: '12 Hours',
       label: 'Continuous Building',
       desc: 'An intense, focused sprint to take your prototype from zero to one.',
     },
@@ -35,7 +35,7 @@ export function About() {
         <p className="text-xl sm:text-2xl md:text-3xl font-semibold leading-snug">
           <strong className="text-white font-bold">Where ideas transform into built reality. </strong>
           <span className="text-neutral-400">
-            An intensive 36-hour sprint backed by SJCE-STEP bringing together bold engineers and makers to build working code and hardware.
+            An intensive 12-hour sprint backed by SJCE-STEP bringing together bold engineers and makers to build working code and hardware.
           </span>
         </p>
       </div>
@@ -57,7 +57,7 @@ export function About() {
             lab tools, and compute needed to deliver proof-of-work.
           </p>
           <div className="flex flex-wrap gap-2 text-xs font-medium text-neutral-300">
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">36-Hour Sprint</span>
+            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">12-Hour Sprint</span>
             <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Hardware Lab Access</span>
             <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">1-on-1 Mentorship</span>
             <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Demo Day</span>
