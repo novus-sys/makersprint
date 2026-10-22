@@ -1,7 +1,24 @@
 import { Trophy, Award, Sparkles, ShieldCheck } from 'lucide-react';
 
+interface PodiumPrize {
+  position: string;
+  title: string;
+  amount?: string;
+  badge: string;
+  perks: string[];
+  borderClass: string;
+  glowClass: string;
+  isGrand?: boolean;
+}
+
+interface CategoryPrize {
+  title: string;
+  reward?: string;
+  description: string;
+}
+
 export function Prizes() {
-  const podiumPrizes = [
+  const podiumPrizes: PodiumPrize[] = [
     {
       position: '2nd Place',
       title: 'First Runner Up',
@@ -48,7 +65,7 @@ export function Prizes() {
     },
   ];
 
-  const categoryPrizes = [
+  const categoryPrizes: CategoryPrize[] = [
     {
       title: 'Best Hardware / IoT Prototype',
       // reward: '₹10,000 + Hardware Toolkits',
@@ -113,9 +130,11 @@ export function Prizes() {
               <h3 className="text-xl font-bold text-white mb-1">
                 {prize.title}
               </h3>
-              <div className="text-4xl font-extrabold text-white tracking-tight my-4">
-                {prize.amount}
-              </div>
+              {prize.amount && (
+                <div className="text-4xl font-extrabold text-white tracking-tight my-4">
+                  {prize.amount}
+                </div>
+              )}
 
               <div className="space-y-3 my-6 pt-4 border-t border-white/5">
                 {prize.perks.map((perk) => (
@@ -161,9 +180,11 @@ export function Prizes() {
               <div>
                 <div className="flex items-center justify-between gap-2 mb-1 flex-wrap">
                   <h4 className="text-base font-bold text-white">{cat.title}</h4>
-                  <span className="text-xs font-semibold text-blue-400 bg-blue-500/10 px-2.5 py-0.5 rounded-full border border-blue-500/20">
-                    {cat.reward}
-                  </span>
+                  {cat.reward && (
+                    <span className="text-xs font-semibold text-blue-400 bg-blue-500/10 px-2.5 py-0.5 rounded-full border border-blue-500/20">
+                      {cat.reward}
+                    </span>
+                  )}
                 </div>
                 <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed">
                   {cat.description}

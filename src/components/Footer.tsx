@@ -1,6 +1,8 @@
 import { ArrowUp, Mail, MapPin, ExternalLink } from 'lucide-react';
 import { GlowText } from './GlowText';
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 export function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -217,7 +219,7 @@ export function Footer() {
       {/* Bottom Bar Constrained to max-w-7xl */}
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
-          <p>© {new Date().getFullYear()} MakerSprint. Organised by SJCE-STEP. All rights reserved.</p>
+          <p>© {CURRENT_YEAR} MakerSprint. Organised by SJCE-STEP. All rights reserved.</p>
 
           <button
             type="button"
