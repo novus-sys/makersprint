@@ -32,7 +32,7 @@ export function Partners() {
       name: 'DST NIDHI',
       type: 'National Partner',
       src: '/Maker%20sprint%20Insta%20post%20(1).png',
-      href: 'https://nidhi.dst.gov.in',
+      href: 'https://nidhi-prayas.org/',
     },
     {
       name: 'Govt of Karnataka',
@@ -44,14 +44,14 @@ export function Partners() {
       name: 'KDEM',
       type: 'Ecosystem Partner',
       src: '/Maker%20sprint%20Insta%20post%20(3).png',
-      href: 'https://kdem.org.in',
+      href: 'https://karnatakadigital.in/',
     },
     {
       name: 'JSS Polytechnic, Nanjangud',
       type: 'Academic Partner',
       src: '/Maker%20sprint%20Insta%20post%20(4).png',
       caption: 'JSS Polytechnic, Nanjangud',
-      href: 'https://jsspolytechnic.org',
+      href: 'https://jsspn.org',
     },
   ];
 
