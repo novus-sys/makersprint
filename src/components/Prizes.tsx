@@ -5,7 +5,7 @@ export function Prizes() {
     {
       position: '2nd Place',
       title: 'First Runner Up',
-      amount: '₹30,000',
+      // amount: '₹30,000',
       badge: 'Silver Medalist',
       perks: [
         'Cash Prize & Official Trophy',
@@ -19,7 +19,7 @@ export function Prizes() {
     {
       position: '1st Place',
       title: 'Grand Champions',
-      amount: '₹50,000',
+      // amount: '₹50,000',
       badge: 'Winner',
       perks: [
         'Direct Fast-Track Incubation Entry at SJCE-STEP',
@@ -35,7 +35,7 @@ export function Prizes() {
     {
       position: '3rd Place',
       title: 'Second Runner Up',
-      amount: '₹20,000',
+      // amount: '₹20,000',
       badge: 'Bronze Medalist',
       perks: [
         'Cash Prize & Official Trophy',
@@ -51,22 +51,22 @@ export function Prizes() {
   const categoryPrizes = [
     {
       title: 'Best Hardware / IoT Prototype',
-      reward: '₹10,000 + Hardware Toolkits',
+      // reward: '₹10,000 + Hardware Toolkits',
       description: 'Recognizing the most intricate, functional embedded electronics or robotics build.',
     },
     {
       title: 'Most Innovative AI Solution',
-      reward: '₹10,000 + Compute Credits',
+      // reward: '₹10,000 + Compute Credits',
       description: 'Awarded to the team delivering the most creative and useful autonomous agent or model.',
     },
     {
       title: 'Best All-Women Maker Team',
-      reward: '₹10,000 + Mentorship Fellowship',
+      // reward: '₹10,000 + Mentorship Fellowship',
       description: 'Celebrating exceptional women engineers and leaders breaking boundaries in tech.',
     },
     {
       title: 'Beginner Breakthrough Award',
-      reward: 'Swag & Maker Starter Kits',
+      // reward: 'Swag & Maker Starter Kits',
       description: 'Awarded to first-time hackathon builders who demonstrate extraordinary passion and execution.',
     },
   ];
@@ -132,11 +132,10 @@ export function Prizes() {
                 href="https://tally.so/r/WOG9jv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`w-full py-2.5 rounded-full text-xs sm:text-sm font-semibold flex items-center justify-center transition-all cursor-pointer ${
-                  prize.isGrand
-                    ? 'bg-white text-black hover:bg-neutral-200'
-                    : 'bg-white/10 text-white hover:bg-white/15 border border-white/10'
-                }`}
+                className={`w-full py-2.5 rounded-full text-xs sm:text-sm font-semibold flex items-center justify-center transition-all cursor-pointer ${prize.isGrand
+                  ? 'bg-white text-black hover:bg-neutral-200'
+                  : 'bg-white/10 text-white hover:bg-white/15 border border-white/10'
+                  }`}
               >
                 Compete For This
               </a>
@@ -186,8 +185,8 @@ export function Prizes() {
             Direct Path to Venture Incubation at SJCE-STEP
           </h3>
           <p className="text-neutral-300 text-sm sm:text-base leading-relaxed mb-6">
-            MakerSprint isn’t just a 12-hour sprint that ends when the timer stops. Standout projects will be invited into the 
-            <strong> SJCE-STEP Pre-Incubation Cohort</strong>, receiving seed-stage guidance, access to prototyping labs, 
+            MakerSprint isn’t just a 12-hour sprint that ends when the timer stops. Standout projects will be invited into the
+            <strong> SJCE-STEP Pre-Incubation Cohort</strong>, receiving seed-stage guidance, access to prototyping labs,
             expert legal/patent consultation, and direct linkage to central & state government grant schemes.
           </p>
           <a
