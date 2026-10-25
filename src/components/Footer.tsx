@@ -20,7 +20,7 @@ export function Footer() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-neutral-300 mb-3">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>Applications Open • Limited Cohort</span>
+              <span>Applications Open • Inauguration: Oct 30 • Sprint: Oct 31</span>
             </div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
               Built for creators, hackers, and visionary founders.

@@ -6,7 +6,7 @@ import { Schedule } from './components/Schedule';
 import { Prizes } from './components/Prizes';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, Calendar, Rocket } from 'lucide-react';
 
 function App() {
   const scrollToAbout = () => {
@@ -45,8 +45,21 @@ function App() {
             className="w-full max-w-xl sm:max-w-3xl md:max-w-5xl lg:max-w-[1140px] h-auto object-contain select-none"
           />
 
+          {/* Event Dates Mention */}
+          <div className="mt-6 sm:mt-8 inline-flex flex-wrap items-center justify-center gap-3 sm:gap-4 px-5 sm:px-6 py-2 sm:py-2.5 rounded-full border border-white/15 bg-white/[0.04] backdrop-blur-md text-xs sm:text-sm text-neutral-300 shadow-lg shadow-black/40">
+            <div className="flex items-center gap-2">
+              <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-400 shrink-0" />
+              <span>Inauguration: <strong className="font-semibold text-white">30th October</strong></span>
+            </div>
+            <span className="text-white/20 hidden sm:inline">•</span>
+            <div className="flex items-center gap-2">
+              <Rocket className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
+              <span>Hackathon Commencement: <strong className="font-semibold text-white">31st October</strong></span>
+            </div>
+          </div>
+
           {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4 mt-8 sm:mt-10">
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-6 sm:mt-8">
             <a
               href="https://tally.so/r/WOG9jv"
               target="_blank"
@@ -88,14 +101,14 @@ function App() {
 
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-xs sm:text-sm font-semibold text-blue-400 mb-6">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Applications Are Now Live</span>
+            <span>Applications Live • Inauguration: Oct 30 | Hackathon: Oct 31</span>
           </div>
 
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight mb-4">
             Ready to Sprint, Build, and Ship?
           </h2>
           <p className="text-neutral-400 text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-            Join hundreds of visionary student innovators and makers at SJCE-STEP Campus for 12 hours of relentless creation.
+            Join visionary student innovators and makers at SJCE-STEP Campus on October 30–31 for two high-impact days of creation.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">

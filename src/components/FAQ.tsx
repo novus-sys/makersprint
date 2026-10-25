@@ -41,9 +41,9 @@ export function FAQ() {
         'All projects must be started and built from scratch during the 12-hour sprint. You are free to use open-source libraries, public packages, APIs, and boilerplate setups, but all core features must be implemented during the hackathon.',
     },
     {
-      question: 'Where is the hackathon venue located?',
+      question: 'When and where is MakerSprint taking place?',
       answer:
-        'MakerSprint will be hosted at the SJCE-STEP campus premises, located within JSS Science and Technology University (SJCE), Mysuru, Karnataka.',
+        'The hackathon inauguration is on 30th October from 2:00 PM to 3:45 PM. The hackathon sprint is on 31st October from 8:30 AM to 10:30 PM (including reporting, all instructions, lunch time, mentorship reviews, and discrepancy buffers). Venue: SJCE-STEP campus premises, JSS Science and Technology University (SJCE), Mysuru, Karnataka.',
     },
   ];
 

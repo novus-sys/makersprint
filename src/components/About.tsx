@@ -35,7 +35,7 @@ export function About() {
         <p className="text-xl sm:text-2xl md:text-3xl font-semibold leading-snug">
           <strong className="text-white font-bold">Where ideas transform into built reality. </strong>
           <span className="text-neutral-400">
-            An intensive 12-hour sprint backed by SJCE-STEP bringing together bold engineers and makers to build working code and hardware.
+            An intensive two-day innovation event backed by SJCE-STEP—inauguration on Oct 30 and the full hackathon sprint on Oct 31—bringing together bold makers.
           </span>
         </p>
       </div>
@@ -57,7 +57,8 @@ export function About() {
             lab tools, and compute needed to deliver proof-of-work.
           </p>
           <div className="flex flex-wrap gap-2 text-xs font-medium text-neutral-300">
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">12-Hour Sprint</span>
+            <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300">Oct 30: Inauguration (2–3:45 PM)</span>
+            <span className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300">Oct 31: Sprint (8:30 AM–10:30 PM)</span>
             <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Hardware Lab Access</span>
             <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">1-on-1 Mentorship</span>
             <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Demo Day</span>
