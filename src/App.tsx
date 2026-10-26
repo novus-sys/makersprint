@@ -101,14 +101,14 @@ function App() {
 
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-xs sm:text-sm font-semibold text-blue-400 mb-6">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Applications Live • Inauguration: Oct 30 | Hackathon: Oct 31</span>
+            <span>Applications Live • Registration Fee: ₹300 / Team</span>
           </div>
 
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight mb-4">
             Ready to Sprint, Build, and Ship?
           </h2>
           <p className="text-neutral-400 text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-            Join visionary student innovators and makers at SJCE-STEP Campus on October 30–31 for two high-impact days of creation.
+            Join visionary student innovators and makers at SJCE-STEP Campus on October 30–31 for two high-impact days of creation. Registration fee is ₹300 per team (teams of 2–4 members).
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
