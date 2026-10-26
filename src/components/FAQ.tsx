@@ -23,7 +23,7 @@ export function FAQ() {
     {
       question: 'Is there any registration fee?',
       answer:
-        'No, participation in MakerSprint is 100% free. Selected participants will also be provided meals, snacks, high-speed Wi-Fi, workspace access, and maker swag kits.',
+        'Yes, the registration fee is ₹300 per team. Selected participants will also be provided meals, snacks, high-speed Wi-Fi, workspace access, and maker swag kits.',
     },
     {
       question: 'Can we bring our own hardware and components?',
@@ -64,7 +64,7 @@ export function FAQ() {
         <p className="text-xl sm:text-2xl md:text-3xl font-semibold leading-snug">
           <strong className="text-white font-bold">Everything you need to know. </strong>
           <span className="text-neutral-400">
-            Clear answers on eligibility, hardware tools, team limits, and 100% free participation.
+            Clear answers on eligibility, hardware tools, team limits, and registration details.
           </span>
         </p>
       </div>
