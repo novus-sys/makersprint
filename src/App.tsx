@@ -1,12 +1,13 @@
 import { Navbar } from './components/Navbar';
 import { Partners } from './components/Partners';
+import { Results } from './components/Results';
 import { About } from './components/About';
 import { Tracks } from './components/Tracks';
 import { Schedule } from './components/Schedule';
 import { Prizes } from './components/Prizes';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
-import { ArrowRight, Sparkles, Calendar, Rocket } from 'lucide-react';
+import { ArrowRight, Sparkles, Trophy, Clock } from 'lucide-react';
 
 function App() {
   const scrollToAbout = () => {
@@ -45,28 +46,27 @@ function App() {
             className="w-full max-w-xl sm:max-w-3xl md:max-w-5xl lg:max-w-[1140px] h-auto object-contain select-none"
           />
 
-          {/* Event Dates Mention */}
-          <div className="mt-6 sm:mt-8 inline-flex flex-wrap items-center justify-center gap-3 sm:gap-4 px-5 sm:px-6 py-2 sm:py-2.5 rounded-full border border-white/15 bg-white/[0.04] backdrop-blur-md text-xs sm:text-sm text-neutral-300 shadow-lg shadow-black/40">
+          {/* Results Status Mention */}
+          <div className="mt-6 sm:mt-8 inline-flex flex-wrap items-center justify-center gap-3 sm:gap-4 px-5 sm:px-6 py-2 sm:py-2.5 rounded-full border border-amber-500/30 bg-amber-500/10 backdrop-blur-md text-xs sm:text-sm text-amber-300 shadow-lg shadow-black/40">
             <div className="flex items-center gap-2">
-              <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-400 shrink-0" />
-              <span>Inauguration: <strong className="font-semibold text-white">30th October</strong></span>
+              <Trophy className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 shrink-0" />
+              <span>AI Track: <strong className="font-semibold text-white">Results Announced</strong></span>
             </div>
             <span className="text-white/20 hidden sm:inline">•</span>
             <div className="flex items-center gap-2">
-              <Rocket className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
-              <span>Hackathon Commencement: <strong className="font-semibold text-white">31st October</strong></span>
+              <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
+              <span>Physical Track: <strong className="font-semibold text-white">Tomorrow @ 1:00 PM</strong></span>
             </div>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-4 mt-6 sm:mt-8">
             <a
-              href="https://tally.so/r/WOG9jv"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 rounded-full text-sm sm:text-base font-semibold bg-white text-black hover:bg-neutral-200 transition-all duration-200 shadow-md shadow-white/10 active:scale-95 cursor-pointer inline-flex items-center justify-center"
+              href="#results"
+              className="px-8 py-3 rounded-full text-sm sm:text-base font-bold bg-gradient-to-r from-amber-400 to-amber-500 text-black hover:from-amber-300 hover:to-amber-400 transition-all duration-200 shadow-lg shadow-amber-500/20 active:scale-95 cursor-pointer inline-flex items-center justify-center gap-2"
             >
-              Register
+              <Trophy className="w-4 h-4 text-black" />
+              <span>View Results</span>
             </a>
             <button
               type="button"
@@ -82,6 +82,9 @@ function App() {
         <Partners />
       </section>
 
+      {/* Official Winners & Results Section */}
+      <Results />
+
       {/* About & Stats Section */}
       <About />
 
@@ -94,38 +97,39 @@ function App() {
       {/* Prizes & SJCE-STEP Incubation */}
       <Prizes />
 
-      {/* Registration Banner Callout */}
+      {/* Conclusion & Incubation Callout */}
       <section id="register" className="relative py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
         <div className="rounded-3xl border border-white/15 bg-gradient-to-b from-white/[0.08] to-white/[0.02] p-8 sm:p-14 backdrop-blur-2xl text-center relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] bg-blue-600/15 blur-[120px] rounded-full pointer-events-none -z-10" />
 
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-xs sm:text-sm font-semibold text-blue-400 mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-xs sm:text-sm font-semibold text-amber-300 mb-6">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Applications Live • Registration Fee: ₹300 / Team</span>
+            <span>Hackathon Concluded • Next Phase: SJCE-STEP Incubation</span>
           </div>
 
           <h2 className="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight mb-4">
-            Ready to Sprint, Build, and Ship?
+            That's a Wrap on MakerSprint 2026!
           </h2>
           <p className="text-neutral-400 text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
-            Join visionary student innovators and makers at SJCE-STEP Campus on October 30–31 for two high-impact days of creation. Registration fee is ₹300 per team (teams of 3 members).
+            Heartfelt congratulations to all makers, mentors, and evaluators who made this edition unforgettable. For winning teams and aspiring builders, your innovation journey with SJCE-STEP is just getting started.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://tally.so/r/WOG9jv"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white text-black font-semibold text-sm sm:text-base hover:bg-neutral-200 transition-all active:scale-95 shadow-lg shadow-white/10 cursor-pointer"
+              href="#results"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-black font-bold text-sm sm:text-base hover:from-amber-300 hover:to-amber-400 transition-all active:scale-95 shadow-lg shadow-amber-500/20 cursor-pointer"
             >
-              <span>Submit Application</span>
+              <Trophy className="w-4 h-4 text-black" />
+              <span>View Winners</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="#about"
+              href="https://sjcestep.in"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3.5 rounded-full bg-black text-white border border-white/30 hover:bg-white/10 text-sm sm:text-base font-semibold transition-all active:scale-95 cursor-pointer"
             >
-              Learn More
+              Explore SJCE-STEP Incubation
             </a>
           </div>
         </div>

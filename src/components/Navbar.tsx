@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Trophy } from 'lucide-react';
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -7,6 +7,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
+    { name: 'Results', href: '#results' },
     { name: 'About', href: '#about' },
     { name: 'Tracks', href: '#tracks' },
     { name: 'Schedule', href: '#schedule' },
@@ -36,7 +37,7 @@ export function Navbar() {
                 onClick={() => setActiveItem(link.name)}
                 className={`text-sm font-medium transition-opacity duration-200 cursor-pointer text-white hover:opacity-75 ${
                   activeItem === link.name ? 'opacity-100 font-semibold' : 'opacity-90'
-                }`}
+                } ${link.name === 'Results' ? 'text-amber-300 font-semibold' : ''}`}
               >
                 {link.name}
               </a>
@@ -44,15 +45,14 @@ export function Navbar() {
           </nav>
         </div>
 
-        {/* Right: Register Now Button */}
+        {/* Right: View Results Button */}
         <div className="hidden sm:flex items-center shrink-0">
           <a
-            href="https://tally.so/r/WOG9jv"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-2 rounded-full bg-white text-black hover:bg-neutral-200 text-sm font-semibold transition-all duration-200 shadow-sm cursor-pointer active:scale-95 inline-flex items-center justify-center"
+            href="#results"
+            className="px-5 py-2 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-black hover:from-amber-300 hover:to-amber-400 text-sm font-bold transition-all duration-200 shadow-md shadow-amber-500/20 cursor-pointer active:scale-95 inline-flex items-center justify-center gap-1.5"
           >
-            Register Now
+            <Trophy className="w-4 h-4 text-black" />
+            <span>View Results</span>
           </a>
         </div>
 
@@ -80,19 +80,21 @@ export function Navbar() {
                 setActiveItem(link.name);
                 setMobileMenuOpen(false);
               }}
-              className="text-base text-white hover:opacity-75 py-1 font-medium"
+              className={`text-base hover:opacity-75 py-1 font-medium ${
+                link.name === 'Results' ? 'text-amber-300 font-bold' : 'text-white'
+              }`}
             >
               {link.name}
             </a>
           ))}
           <div className="pt-3 border-t border-white/10 flex flex-col">
             <a
-              href="https://tally.so/r/WOG9jv"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-2.5 rounded-full bg-white text-black text-sm font-semibold text-center inline-flex items-center justify-center"
+              href="#results"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full py-2.5 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-black text-sm font-bold text-center inline-flex items-center justify-center gap-2 shadow-md shadow-amber-500/20"
             >
-              Register Now
+              <Trophy className="w-4 h-4 text-black" />
+              <span>View Results</span>
             </a>
           </div>
         </div>
