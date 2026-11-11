@@ -7,7 +7,7 @@ import { Schedule } from './components/Schedule';
 import { Prizes } from './components/Prizes';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
-import { ArrowRight, Sparkles, Trophy, Clock } from 'lucide-react';
+import { ArrowRight, Sparkles, Trophy } from 'lucide-react';
 
 function App() {
   const scrollToAbout = () => {
@@ -50,12 +50,12 @@ function App() {
           <div className="mt-6 sm:mt-8 inline-flex flex-wrap items-center justify-center gap-3 sm:gap-4 px-5 sm:px-6 py-2 sm:py-2.5 rounded-full border border-amber-500/30 bg-amber-500/10 backdrop-blur-md text-xs sm:text-sm text-amber-300 shadow-lg shadow-black/40">
             <div className="flex items-center gap-2">
               <Trophy className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 shrink-0" />
-              <span>AI Track: <strong className="font-semibold text-white">Results Announced</strong></span>
+              <span>Official Results: <strong className="font-semibold text-white">All Track Winners Declared</strong></span>
             </div>
             <span className="text-white/20 hidden sm:inline">•</span>
             <div className="flex items-center gap-2">
-              <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
-              <span>Physical Track: <strong className="font-semibold text-white">Tomorrow @ 1:00 PM</strong></span>
+              <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
+              <span>AI &amp; Physical Tracks Live</span>
             </div>
           </div>
 
